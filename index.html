@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>HH Scanner</p>
+
+<script>
+var res="";
+window.onkeypress = function (e) {
+    var code = e.keyCode ? e.keyCode : e.which;
+    if (code === 13) { //print res if enter key pressed
+    		alert("Result is: "+ res);
+        res = "";
+    } else { //append to res
+        res = res + String.fromCharCode(e.keyCode);
+    }
+};
+</script>
+
+</body>
+</html>
